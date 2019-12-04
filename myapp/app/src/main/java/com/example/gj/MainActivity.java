@@ -14,7 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.gj.MESSAGE";
+//    public static final String EXTRA_MESSAGE = "com.example.gj.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +23,14 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
     }
 
     @Override
@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DisActivity.class);
 //        EditText editText = (EditText) findViewById(R.id.editText);
 //        String message = editText.getText().toString();
-        String message = "test message";
-        intent.putExtra(EXTRA_MESSAGE, message);
+//        String message = "test message";
+//        intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
 }

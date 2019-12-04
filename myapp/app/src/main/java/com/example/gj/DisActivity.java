@@ -30,8 +30,8 @@ public class DisActivity extends AppCompatActivity {
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+//        Intent intent = getIntent();
+//        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
     }
 
 }
